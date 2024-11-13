@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSizzle</title>
+
+    <link rel="stylesheet" href="ShopSizzle.css">
+
+</head>
+<body>
+    <header>
+        <h1>ShopSizzle</h1>
+        <div class="cart">
+            <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+       <h1>Electric Night Bulb</h1>
+        <div class="products" alt="Light">
+            <div class="product">
+                <img src="hqdefault.jpg" alt="Rose" style="width:90px;height:100px;">
+                <h2>Rose</h2>
+                <p>₹ 10.00</p>
+                <button onclick="addToCart('Rose', 10)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="hqdefault.jpg" alt="Cactus" style="width:90px;height:100px;">
+                <h2>Cactus</h2>
+                <p>₹ 15.00</p>
+                <button onclick="addToCart('Cactus', 15)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="hqdefault.jpg" alt="Jhumar" style="width:90px;height:100px;">
+                <h2>Jhumar</h2>
+                <p>₹ 10.00</p>
+                <button onclick="addToCart('Jhumar', 10)">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <main>
+       <h1>Gift Box</h1>
+        <div class="product" alt="Light">
+            <div class="product">
+                <img src="hqdefault.jpg" alt="Chocolate Box" style="width:90px;height:100px;">
+                <h2>ChocolateBox</h2>
+                <p>₹ 10.00</p>
+                <button onclick="addToCart('ChocolateBox', 10)">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+   <main>
+       <h1>Home Decoration</h1>
+        <div class="product" alt="Light">
+            <div class="product">
+                <img src="hqdefault.jpg" alt="Hanging Bells" style="width:90px;height:100px;">
+                <h2>HangingBells</h2>
+                <p>₹ 10.00</p>
+                <button onclick="addToCart('HangingBells', 10)">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <div id="cartModal" style="display:none;">
+    <div>
+        <span id="closeCart">Close</span>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">Total: ₹0.00</p>
+        <button id="buyNowBtn">Buy Now</button> 
+    </div>
+    </div>
+
+    <script src="ShopSizzle.js"></script>
+
+</body>
+</html>
